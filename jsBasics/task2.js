@@ -1,3 +1,6 @@
-let nameA = ' ';
-let nameB = 'Rew';
-console.log("Hello," + nameA + "And" + nameB + "!");
+let nameA = 'Sasha';
+let nameB = 'Sirozha';
+let concatinatedGreeting = "Hello, " + nameA + " and " + nameB + "!";
+console.log(concatinatedGreeting);
+let templatedGreeting = `Hello, ${nameA} and ${nameB}!`;
+console.log(templatedGreeting);
