@@ -5,15 +5,19 @@ function divide(numerator, denominator){
     else if(typeof numerator !== "number" || typeof denominator !== "number"){
         throw new Error("Тільки числа можна ділити");
     }
+    else if(isNaN(numerator) || isNaN(denominator)){
+        throw new Error("Тільки числа можна ділити");
+    }
     let result = numerator / denominator;
-    result = Math.round(result*100)/100;
     return result;}
 
 try {
     console.log(divide(10, 2));}
     catch (error) {
-    console.log("Нема помилки");
     console.log(error.message);
+    }
+    finally{
+    console.log("Робота завершена");
     }
 try{
     console.log(divide(10, 0));}
@@ -21,11 +25,17 @@ try{
     console.log("Виникла помилка:");
     console.log(error.message);
     }
+    finally{
+    console.log("Робота завершена");
+    }
 try{    
     console.log(divide(10, "a"));}
     catch (error) {
     console.log("Виникла помилка:");
     console.log(error.message);
+    }
+    finally{
+    console.log("Робота завершена");
     }
 try {
     console.log(divide("b", 10));}
