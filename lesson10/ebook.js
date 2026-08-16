@@ -1,5 +1,5 @@
-import  {Book} from './book.js';
-export class eBook extends Book {
+import  {Book} from './Book.js';
+export class EBook extends Book {
     constructor(title, author, year, fileType) {
         super(title, author, year);
         this.fileType = fileType;
@@ -17,7 +17,8 @@ export class eBook extends Book {
         return `${this.title} was written by ${this.author} in ${this.year}. It is available in ${this.fileType} format now.`;
     }
     static addEBook(book, fileType) {
-        const newEBook = new eBook(book.title, book.author, book.year, fileType);
-        return newEBook.printInfo();
+        const newEBook = new EBook(book.title, book.author, book.year, fileType);
+        //return newEBook.printInfo();
+        return newEBook;
     }
 }

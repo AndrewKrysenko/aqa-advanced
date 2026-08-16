@@ -24,7 +24,7 @@ export class Book {
         this._author = updatedAuthor;
     }
     set year(updatedYear) {
-        if(typeof updatedYear !== "number" || updatedYear < 1900 || updatedYear > 2000) {
+        if(typeof updatedYear !== "number" || updatedYear < 1900 || updatedYear > 2020) {
             throw new Error("Year is not correct.");}
         this._year = updatedYear;
     }
