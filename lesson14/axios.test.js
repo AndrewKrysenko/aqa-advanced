@@ -46,4 +46,3 @@ describe("JSONPlaceholder API", () => {
     expect(response.data).toHaveProperty("title", "New ToDo item");
   });
 }); 
-
